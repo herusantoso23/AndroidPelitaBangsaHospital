@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_periksa"
+            android:icon="@drawable/ic_healing_black_24dp"
+            android:title="Pemeriksaan" />
+        <item
+            android:id="@+id/nav_pasien"
+            android:icon="@drawable/ic_pregnant_woman_black_24dp"
+            android:title="Pasien" />
+        <item
+            android:id="@+id/nav_dokter"
+            android:icon="@drawable/ic_supervisor_account_black_24dp"
+            android:title="Dokter" />
+        <item
+            android:id="@+id/nav_obat"
+            android:icon="@drawable/ic_adb_black_24dp"
+            android:title="Obat" />
+    </group>
+
+    <item android:title="Tentang">
+        <menu>
+            <item
+                android:id="@+id/nav_kelompok"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Kelompok" />
+        </menu>
+    </item>
+
+
+</menu>

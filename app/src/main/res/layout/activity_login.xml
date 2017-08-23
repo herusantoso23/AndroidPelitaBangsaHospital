@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:src="@drawable/periksa"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="Jagoan Biodata"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="Pelita Bangsa Hospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/edit_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginBottom="30dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:inputType="textPassword"
+            />
+    </android.support.design.widget.TextInputLayout>>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:text="Login"
+            android:onClick="loginOnClick"
+            android:textAllCaps="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
